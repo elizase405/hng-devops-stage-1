@@ -2,7 +2,7 @@
 
 # Function to generate a random password
 generate_password() {
-    head /dev/urandom | tr -dc A-Za-z0-9 | head -c 10 ; echo ''
+	openssl rand -base64 16
 }
 
 # Log file to record actions
